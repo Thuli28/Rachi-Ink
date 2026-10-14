@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #ff6b6b;
-  --secondary-color: #f7f7f7;
-  --text-color: #333;
+  --primary-color: #6b1e2d;
+  --secondary-color: #0b0b0b;
+  --text-color: #F6EFE6;
   --font-family: 'Inter', sans-serif;
   --border: .1rem solid var(--primary-color);
   --border-hover: 0 8px 16px solid var(--text-color);
