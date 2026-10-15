@@ -50,6 +50,22 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--primary-color);
 }
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: var(--text-color);
+  background: var(--primary-color);
+  border-radius: .5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--text-color);
+  color: var(--primary-color);
+  border: var(--border);
+}
 .header .header-1 {
   background: var(--secondary-color);
   border-bottom: var(--border);
@@ -149,7 +165,89 @@ header .header-2.active {
 .bottom-navbar a:hover {
   color: var(--primary-color);
 }
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0; left: -150%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+.login-form-container.active{
+    left: 0;
+}   
+.login-form-container form{
+    background: var(--secondary-color);
+    border: var(--border);
+    box-shadow: var(--border-shadow);
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 2rem;
+    width: 40rem;
+    text-align: center;
+}
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+.login-form-container form span{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    display: block;
+}
+.login-form-container form .box{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background: var(--secondary-color);
+    border: var(--border);
+    margin: 1rem 0;
+}
+.login-form-container form .box:focus{
+    background: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.login-form-container form .btn{
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0;
 
+}
+.login-form-container form p{
+    padding-top: 8.rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.login-form-container form p a{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.login-form-container #close-login-btn{
+    position: absolute;
+    top: 2rem; right: 2rem;
+    font-size: 3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}   
 
 
 
