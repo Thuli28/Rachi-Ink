@@ -50,6 +50,9 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--primary-color);
 }
+section {
+  padding: 3rem 9%;
+}
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -247,11 +250,45 @@ header .header-2.active {
     font-size: 3rem;
     color: var(--primary-color);
     cursor: pointer;
-}   
-
-
-
-
+} 
+.home{
+    background: url(../images/Rachi\ Ink-Wall.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+} 
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+} 
+.home .row .content{
+    flex: 1 1 42rem;
+}
+.home .row .books-slider{
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.home .row .books-slider a img{
+    height: 25rem;
+}
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+}
+.home .row .books-slider .shelf{
+    width: 100%;
+    margin-top: -2rem;
+}
+.home .row .content h3{
+    font-size: 4.5rem;
+}
+.home .row .content p{
+    font-size: 1.5rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
 
 
 
@@ -266,6 +303,9 @@ header .header-2.active {
     .header .header-1 {
         padding: 2rem;  
   }
+  section{
+    padding: 3rem 2rem;
+  }  
 }
 @media (max-width:768px) {
     html{
@@ -295,6 +335,12 @@ header .header-2.active {
   }
    .header .header-1 .search-form.active {
     top: calc(100% + 1rem);
+  }
+  .home .row .content{
+    text-align: center;
+  }
+  .home .row .content h3{
+    font-size: 3.5rem;
   }
 }
 
